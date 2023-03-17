@@ -151,6 +151,8 @@ $breakpoints: (
   bp5: calc(1401 / 16 * 1em),
 ) !default;
 
+$container-max-width: calc(800 / $root-font-size * 1rem); // 50rem
+
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
@@ -215,6 +217,16 @@ h1 {
   font-weight: 700;
   line-height: calc($baseline * 4);
   margin-bottom: $space-m;
+
+  @include mq(bp1) {
+    font-size: $ms9;
+    line-height: calc($baseline * 6);
+  }
+
+  @include mq(bp2) {
+    font-size: $ms11;
+    line-height: calc($baseline * 8);
+  }
 }
 
 h2 {
@@ -310,6 +322,24 @@ a:active {
 */
 
 .o-row {
+  padding: $space-m $space-m 0;
+  display: flow-root;
+}
+
+.o-row--primary {
+  background-color: $color-primary-light;
+  color: white;
+}
+
+.o-row--dark {
+  background-color: get-color(color-gray, 900);
+  color: white;
+}
+
+.o-row--xl {
+  @include mq(bp2) {
+    padding: $space-xl $space-xl $space-m;
+  }
 }
 
 /*
@@ -319,6 +349,8 @@ a:active {
 */
 
 .o-container {
+  max-width: $container-max-width;
+  margin: 0 auto;
 }
 
 /*
