@@ -283,15 +283,20 @@ hr {
 }
 
 a {
-}
-
-a:hover {
+  color: $color-primary;
+  transition: 0.1s ease;
 }
 
 a:visited {
+  color: $color-primary;
+}
+
+a:hover {
+  color: $color-primary-light;
 }
 
 a:active {
+  color: $color-primary-dark;
 }
 
 /*---------------------------------------/*
