@@ -33,14 +33,102 @@ img {
     ---
     Default markup for page level elements
 */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: hsl(198.0786026201, 10%, 10%);
+  scroll-behavior: smooth;
+}
+
 /*
     Customize the background color and color to match your design.
 */
+::-moz-selection {
+  background-color: hsl(198.0786026201, 100%, 50%);
+  color: white;
+}
+::selection {
+  background-color: hsl(198.0786026201, 100%, 50%);
+  color: white;
+}
+
 /*
     Elements: typography
     ---
     Default markup for typographic elements
 */
+h1 {
+  font-size: 1.8020324707rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.423828125rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure {
+  margin-bottom: 1.5rem;
+}
+
+ul,
+ol {
+  padding-left: 1rem;
+}
+
+li ul,
+li ol {
+  margin-bottom: 0;
+}
+
+blockquote {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.423828125rem;
+  font-style: italic;
+  line-height: 2rem;
+}
+
+figcaption {
+  font-size: 0.8888888889rem;
+  line-height: 1rem;
+  margin-top: 0.5rem;
+  color: hsl(198.0786026201, 10%, 30%);
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: hsl(198.0786026201, 10%, 90%);
+  margin-bottom: 1.5rem;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/

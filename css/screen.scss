@@ -188,6 +188,11 @@ img {
 */
 
 html {
+  font-size: calc($root-font-size / 16 * 100%);
+  line-height: 1.5; // 24px
+  font-family: $font-family-primary; // global font-family
+  color: $color-text; // global text color
+  scroll-behavior: smooth;
 }
 
 /*
@@ -195,6 +200,8 @@ html {
 */
 
 ::selection {
+  background-color: $color-primary-light;
+  color: white;
 }
 
 /*
@@ -204,17 +211,33 @@ html {
 */
 
 h1 {
+  font-size: $ms5;
+  font-weight: 700;
+  line-height: calc($baseline * 4);
+  margin-bottom: $space-m;
 }
 
 h2 {
+  font-size: $ms3;
+  font-weight: 700;
+  line-height: calc($baseline * 3);
+  margin-bottom: $space-m;
 }
 
 h3 {
+  font-size: $ms1;
+  font-weight: 700;
+  line-height: calc($baseline * 3);
+  margin-bottom: $space-m;
 }
 
 h4,
 h5,
 h6 {
+  font-size: $ms0;
+  font-weight: 700;
+  line-height: calc($baseline * 4);
+  margin-bottom: $space-m;
 }
 
 p,
@@ -224,23 +247,39 @@ dl,
 table,
 address,
 figure {
+  margin-bottom: $space-m;
 }
 
 ul,
 ol {
+  // list-style-position: inside;
+  padding-left: $space-s;
 }
 
 li ul,
 li ol {
+  margin-bottom: 0;
 }
 
 blockquote {
+  font-family: $font-family-secondary;
+  font-size: $ms3;
+  font-style: italic;
+  line-height: calc($baseline * 4);
 }
 
 figcaption {
+  font-size: $ms-1;
+  line-height: calc($baseline * 2);
+  margin-top: $space-xs;
+  color: $color-text-light;
 }
 
 hr {
+  height: 1px;
+  border: 0;
+  background-color: $color-border;
+  margin-bottom: $space-m;
 }
 
 a {
